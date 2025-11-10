@@ -1,0 +1,24 @@
+Axis Settings (Filters & Visuals)
+X-Axis Scale (Frequency): 2.14x
+Min Frequency (Hz): 20 Hz
+Max Frequency (Hz): 20000 Hz
+Y-Axis Scale (Amplitude): 2.82x
+Amplitude Threshold: 50.0%
+Z-Axis Scale (Timbre): 2.24x
+Timbre Sensitivity: 0.31
+Min Pitch (Note) Filter: 21 (A0)
+Max Pitch (Note) Filter: 96 (C7)
+Base Point Scale: 0.74x
+Max Peaks per Sample: 2
+Point Lifetime (seconds): 10 s
+Sample Rate (FPS): 15 FPS
+Playback Speed: 1.0x
+Loop Audio: —
+Show Tracking Lines: —
+Connect Simultaneous Peaks: —
+Connection Distance: 457
+
+Bloom Settings
+Bloom Threshold: 0.04
+Bloom Strength: 1.8
+Bloom Radius: 0.7
