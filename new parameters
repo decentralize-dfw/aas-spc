@@ -1,0 +1,20 @@
+X: Tonal Centroid, Y: RMS, Z: Key Strength (Toplam: 36/40)
+Bu öneri, müzikal tonaliteyi merkeze alarak en yüksek puan aldı çünkü chroma ve harmonik unsurları birleştirerek akor/melodi ayrımını güçlendirir ve 3D'de "tonal mimari" yaratır. Kodda mevcut pitch class ile entegre edilebilirliği yüksek, vokal/high dalgalarını dinamik kümeler halinde görselleştirerek bas'tan ayrıştırır.
+X: Chroma, Y: Amplitude, Z: Band Index (Toplam: 35/40)
+Müzikal önemi ve varyasyonuyla öne çıkıyor çünkü nota sınıflarını X'te kullanarak renkli, izlenebilir dalgalar üretir ve Z'de band index ile 4 dalgayı (bas/mid/high/vocal) net ayırır. Orijinal kodun color wheel'ini doğrudan geliştirir, ancak chroma hesabı için hafif ek işlem gerektirir.
+X: Spectral Centroid, Y: Amplitude, Z: Harmonicity (Toplam: 33/40)
+Akustik zenginliğiyle sıralamada üstte çünkü centroid bas-treble ayrımını, harmonicity ise vokal/timbre katmanını vurgular, mevcut FFT ile uyumlu. 3D'de katmanlı bir yapı sağlar, ama amplitude ile redundantlik riski taşır.
+X: MFCC1, Y: RMS, Z: MFCC2 (Toplam: 33/40)
+İnsan kulağına benzer mel skalası varyasyonuyla güçlü çünkü vokal ayrımını mükemmelleştirir ve timbre portresi çizer, algoritmik olarak kararlı. Kod entegrasyonu orta zorlukta, 3D'de organik dağılım yaratır ama soyut görünebilir.
+X: Inharmonicity, Y: RMS, Z: Formant Centroid (Toplam: 33/40)
+Vokal/metal ses ayrımını kuvvetlendirdiği için yüksek puanlı, harmonik-gürültü oranını Z'de derinleştirerek farklı katmanlar ekler. Hesaplama yoğunluğu dezavantaj, ama mevcut harmonic richness ile harmanlanabilir.
+X: Attack, Y: Peak, Z: Decay (Toplam: 32/40)
+Envelope dinamikleriyle ritmik dalgalar üreterek müzikal dramayı artırır, perküsyon/high için ideal varyasyon sağlar. Time-domain eklemesi kodda değişiklik gerektirir, 3D'de teatral hareketlilik katar.
+X: Rolloff, Y: Amplitude, Z: Flatness (Toplam: 31/40)
+Temiz ayrışma ve dengeli görselleştirmesiyle pratik, yüksek frekans enerjisini Z'de flatness ile bas-vocal'ı ayırır. FFT tabanlı kolay entegrasyon, ama biraz teknik kalır.
+X: ZCR, Y: RMS, Z: Roughness (Toplam: 29/40)
+Perküsyon ayrımını iyi yapar çünkü keskinlik ve roughness tiz/high dalgalarını vurgular, gürültülü seslerde varyasyonlu. Vokal için zayıf kalır, 3D'de artefakt riski taşır.
+X: Log-Freq (Band İçi), Y: Amplitude, Z: Band Index (Toplam: 28/40)
+Stabil ve güvenli çünkü mevcut frequency'yi band'lere uyarlar, 4 dalgayı Z'de netleştirir. Görsel olarak tanıdık kalır, inovasyon eksikliğiyle düşük puan alır.
+X: Skewness, Y: Kurtosis, Z: RMS (Toplam: 27/40)
+Teknik sağlamlığıyla son sırada çünkü istatistiksel dağılımı yakalar, ama soyut görünüm verir ve müzikal önemi düşük. Varyasyon sınırlı, 3D'de anlamlı ayrım yaratmaz.
